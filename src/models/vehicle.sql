@@ -3,7 +3,7 @@ CREATE TABLE vehicle(
     licensePlateNumber varchar(255) NOT NULL,
     manufacturerName varchar(255) NOT NULL,
     model varchar(255) NOT NULL,
-    fuelType varchar(255) NOT NULL,
+    fuelType enum('petrol', 'diesal', 'electric') NOT NULL,
     ownerName varchar(255) NOT NULL,
     rc_status varchar(255) NOT NULL,
     vehicleColor varchar(255) NOT NULL,
